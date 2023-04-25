@@ -91,11 +91,8 @@
 }
 }
 /* Media Query for laptop portrait mode */
-@media only screen and (min-width: 1024px){
-nav{
-    width: 91% !important;
-}
-}
+@media only screen and (min-width: 1024px){}
+
 /* Media Query for Tablets Ipads portrait mode */
 
 
