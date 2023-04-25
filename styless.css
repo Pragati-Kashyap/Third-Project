@@ -47,6 +47,10 @@
     animation: inherit !important;
     visibility: visible !important;
    }
+   nav{
+    width: 100% !important;
+    left: 0;
+   }
 }
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1023px){
@@ -90,10 +94,7 @@
     width : 100% 
 }
 }
-/* Media Query for laptop portrait mode */
-@media only screen and (min-width: 1024px){}
 
-/* Media Query for Tablets Ipads portrait mode */
 
 
 body{
@@ -119,10 +120,11 @@ body{
   
 }
 .navbar{
+    scroll-behavior: smooth;
     position: relative;
     margin-top: 45px;
     padding: 0 5rem;
-    transition: .5s;
+    transition: .5s ease-in-out !important;
     z-index: 9999;
     margin-left: 1.8rem;
     margin-right: 1.8rem;
@@ -209,19 +211,19 @@ opacity: 1;
     font-weight: 500 !important;
 }
 
-.active .slideRight {
-    animation:1s slide-Right;
+.slideRight {
+    animation:1s slideRight !important;
   }
-  @keyframes slide-Right {
+  @keyframes slideRight {
     from {
-      margin-right: -100%;
+      margin-left: -800%;
     }
     to {
-      margin-right: 0%;
+      margin-left:0%;
     }
   }
  .slideLeft {
-    animation:1s slideLeft;
+    animation:1.2s slideLeft;
   }
   @keyframes slideLeft {
     from {
@@ -574,6 +576,13 @@ p{
     border-radius: 40px;
     font-size: 20px;
     transition: .5s;
+}
+
+.owl-next{
+    left: 35px;
+}
+.owl-prev{
+    right: 36px;
 }
 .owl-nav i{
     color: white;
