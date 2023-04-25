@@ -83,9 +83,18 @@
        .navbar-fixed{
         width: 100% !important;
        }
-       .prop-rates{
+       #prop-rates{
         margin-top: 0% !important;
        }
+    nav{
+    width : 100% 
+}
+}
+/* Media Query for laptop portrait mode */
+@media only screen and (min-width: 1024px){
+nav{
+    width: 91% !important;
+}
 }
 /* Media Query for Tablets Ipads portrait mode */
 
