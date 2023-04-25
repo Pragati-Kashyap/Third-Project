@@ -88,11 +88,8 @@
        }
 }
 /* Media Query for Tablets Ipads portrait mode */
-@media only screen and (min-width: 1024px){
-nav{
-    width: 91%;
-}
-}
+
+
 body{
     background-color:  #EFFDF5!important;
 }
