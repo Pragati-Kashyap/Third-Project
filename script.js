@@ -20,7 +20,7 @@ function backToTop(){
 }
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('.navbar');
-    if (window.scrollY >= 100) {
+    if (window.scrollY) {
       navbar.classList.add('navbar-fixed');
     } else {
       navbar.classList.remove('navbar-fixed');
